@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="codigo">Codigo Mentor</div>
+	<script type="text/javascript">
+		// Una forma: $(document).on("ready", function(){});
+		// Otra forma: $(document).ready(function(){});
+		// Tercera forma: $(function(){});
+		$(document).ready(function(){
+			$("#codigo").hide(3000).show(3000); // 3 segundos.
+		});
+	</script>
+</body>
+</html>

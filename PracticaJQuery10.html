@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 10</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	Nombre: <input type="text" id="miID" value="Nombre">
+	Mail: <input type="email" id="miID2" value="Mail">
+
+	<div id="info"></div><br/>
+	<button>Click</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var atributo = "";
+				atributo = "El valor del atributo type es: " + $("input").attr("type");
+				$("#info").html(atributo);
+				// attr("id", "codigo"); Cambia el id a codigo.
+				// $("input[type='text']").attr("id", "codigo");
+			});
+		});
+	</script>
+</body>
+</html>

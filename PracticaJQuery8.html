@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		#caja {
+			height: 120px;
+			width: 100px;
+			border: 1px solid blue;
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+	<div id="caja"></div>
+	<div id="detalles"></div>
+	<button>Mostrar Dimensiones</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var texto = "";
+				
+				texto += "Width: " + $("#caja").width() + "px" + "<br/>";
+				texto += "Height: " + $("#caja").height() + "px";
+
+				$("#detalles").html(texto);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 12</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		.nuevaClase {
+			color: green;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<p>Primer Parrafo</p>
+	<p>Segundo Parrafo</p>
+	<p>Tercer Parrafo</p>
+
+	<button>Cambiar Color</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				// $("p").css("color", "red");
+				// $("p:first").css("color", "red");
+				// $("p:last").css("color", "red");
+				$("p").addClass("nuevaClase")
+			});
+		});
+	</script>
+</body>
+</html>

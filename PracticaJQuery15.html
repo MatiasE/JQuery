@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 15</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="info"></div>
+	<button>Click</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var txt = "";
+				txt += "Window width: " + $(window).width() + "<br>";
+				txt += "Window height: " + $(window).height();
+				$("#info").html(txt);
+			});
+		});
+	</script>
+</body>
+</html>

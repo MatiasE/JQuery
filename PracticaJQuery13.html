@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 13</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		.miClase1 {
+			color: red;
+			font-size: 25px;
+		}
+
+		.miClase2 {
+			color: orange;
+			font-size: 25px;
+		}
+
+		.miClase3 {
+			color: blue;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<p>Primer Parrafo</p>
+	<p>Segundo Parrafo</p>
+	<p>Tercer Parrafo</p>
+
+	<button>Cambiar Color</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").addClass(function(index){
+					return "miClase" + (index + 1);
+				});
+			});
+		});
+	</script>
+</body>
+</html>

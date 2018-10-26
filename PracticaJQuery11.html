@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 11</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		#p1 {
+			background-color: red;
+		}
+
+		#p2 {
+			background-color: yellow;
+		}
+
+		#p3 {
+			background-color: blue;
+		}
+
+		#p4 {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<p>Primero</p>
+	<p>Segundo</p>
+	<p>Tercero</p>
+	<p>Cuarto</p>
+
+	<button>Click</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").attr("id", function(index){ // Por iteracion implicita, index = 0.
+					return "p" + (index + 1);
+				});
+			});
+		});
+	</script>
+</body>
+</html>

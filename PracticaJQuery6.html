@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<table border="1" style="border-collapse: collapse;">
+		<tr>
+			<td>Mario</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Beto</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>Luis</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Miguel</td>
+			<td>27</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("tr:even").css("background-color", "yellow"); // Filas indice par.
+			$("tr:odd").css("background-color", "blue"); // Filas indice impar
+		});
+	</script>
+</body>
+</html>

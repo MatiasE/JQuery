@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<input type="button" id="boton" value="click">
+	<p id="texto">Texto</p>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#boton").click(function(){
+				$("#boton").hide(3000).show(3000); // Es lo mismo $(this). etc.
+				// this. Elemento o id con el que tamos trabajando.
+				$("#texto").hide(3000).show(3000);
+			});
+		});
+	</script>
+</body>
+</html>

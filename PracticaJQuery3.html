@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text" id="espacio">
+	<input type="submit" id="enviar" value="enviar">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#enviar").click(function(){
+				var x = $("#espacio").val(); // Obtengo el valor ingresado por el usuario.
+				alert(x);
+			});
+		});
+	</script>
+</body>
+</html>

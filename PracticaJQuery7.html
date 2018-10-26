@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<p id="texto1">Programacion</p>	
+	<p id="texto2">Codigo</p>	
+	
+	<button id="boton1">Cambiar Texto</button>
+	<button id="boton2">Cambiar Html</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#boton1").click(function(){
+				$("#texto1").text("<b>Matias Epifanio</b>"); // Te muestra las <b> porque es texto.
+			});
+			$("#boton2").click(function(){
+				$("#texto2").html("<b>Hola Mundo</b>"); // Te pone en negrita la palabra Hola Mundo.
+			});
+		});
+	</script>
+</body>
+</html>

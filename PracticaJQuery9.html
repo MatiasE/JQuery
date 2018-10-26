@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica JQuery 9</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	Nombre: <input type="text" id="miID" value="Nombre">
+
+	<div id="info"></div><br/>
+	<button>Click</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var nombre = $("#miID").val(); 
+				$("#info").html(nombre);
+			});
+		});
+	</script>
+</body>
+</html>
